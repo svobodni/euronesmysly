@@ -85,8 +85,8 @@ html, body {
 /* home ---------------------------------------------------------------------- */
 .all {
 	width:100%;
+	height:100%;
 	float:left;
-	min-height:850px;
 	max-height:100%;
 	height:100%;
 	position:relative;
@@ -107,9 +107,9 @@ h2 a {
 
 .euronesmysly {
 	position:absolute;
-	margin:0 0 100px -320px;
+	margin:-320px 0 0 -320px;
 	left:50%;
-	top:100px;
+	top:50%;
 	width:640px;
 	height:640px;
 	background:url(../images/bg.png) no-repeat center 100px;
@@ -273,9 +273,144 @@ h2 a {
 	text-decoration:none;
 }
 
+@media(min-width: 741px) and (max-width: 980px), (min-height: 611px) and (max-height: 690px) {
+	.euronesmysly {
+		width:500px;
+		height:500px;
+		margin:-250px 0 0 -250px;
+		background:url(../images/bg.png) no-repeat center 100px;
+		background-size:40%;
+	}
+	.euronesmysly h1 {
+		color:#00654e;
+		font-size:28px;
+		font-family:'adelle_rgbold';
+		text-align:center;
+		float:left;
+		width:100%;
+		margin:325px 0 0 0;
+	}
+	.euro01 {top:0; left:50%; margin-left:-25px;}
+	.euro02 {top:3%; right:32%;}
+	.euro03 {top:10%; right:20%;}
+	.euro04 {top:20%; right:10%;}
+	.euro05 {top:32%; right:3%;}
+	.euro06 {top:50%; right:0; margin-top:-25px;}
+	.euro07 {bottom:32%; right:3%;}
+	.euro08 {bottom:20%; right:10%;}
+	.euro09 {bottom:10%; right:20%;}
+	.euro10 {bottom:3%; right:32%;}
+	.euro11 {bottom:0; left:50%; margin-left:-25px;}
+	.euro12 {bottom:3%; left:32%;}
+	.euro13 {bottom:10%; left:20%; }
+	.euro14 {bottom:20%; left:10%;}
+	.euro15 {bottom:32%; left:3%;}
+	.euro16 {top:50%; left:0; margin-top:-25px;}
+	.euro17 {top:32%; left:3%;}
+	.euro18 {top:20%; left:10%;}
+	.euro19 {top:10%; left:20%;}
+	.euro20 {top:3%; left:32%;}
+	.euronesmysly div {
+		position:absolute;
+		width:50px;
+		height:50px;
+	}
+	.euronesmysly div a {
+		float:left;
+		position:relative;
+		border-radius:50%;
+		background:#00654e;
+		width:50px;
+		height:50px;
+		color:#00654e;
+		overflow:hidden;
+		text-align:center;
+		-webkit-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+	}
+	.euronesmysly div a i {
+		float:left;
+		width:100%;
+		text-align:center;
+		color:#fff;
+		font-size:25px;
+		line-height:50px;
+		font-family:'adelle_rgbold';
+		font-style:normal;
+	}
+}
+
+@media(min-width: 481px) and (max-width: 740px), (min-height: 491px) and (max-height: 610px) {
+	.euronesmysly {
+		width:350px;
+		height:350px;
+		margin:-175px 0 0 -175px;
+		background:url(../images/bg.png) no-repeat center 70px;
+		background-size:30%;
+	}
+	.euronesmysly h1 {
+		color:#00654e;
+		font-size:21px;
+		font-family:'adelle_rgbold';
+		text-align:center;
+		float:left;
+		width:100%;
+		margin:200px 0 0 0;
+	}
+	.euro01 {top:0; left:50%; margin-left:-17px;}
+	.euro02 {top:3%; right:32%;}
+	.euro03 {top:10%; right:20%;}
+	.euro04 {top:20%; right:10%;}
+	.euro05 {top:32%; right:3%;}
+	.euro06 {top:50%; right:0; margin-top:-17px;}
+	.euro07 {bottom:32%; right:3%;}
+	.euro08 {bottom:20%; right:10%;}
+	.euro09 {bottom:10%; right:20%;}
+	.euro10 {bottom:3%; right:32%;}
+	.euro11 {bottom:0; left:50%; margin-left:-17px;}
+	.euro12 {bottom:3%; left:32%;}
+	.euro13 {bottom:10%; left:20%; }
+	.euro14 {bottom:20%; left:10%;}
+	.euro15 {bottom:32%; left:3%;}
+	.euro16 {top:50%; left:0; margin-top:-17px;}
+	.euro17 {top:32%; left:3%;}
+	.euro18 {top:20%; left:10%;}
+	.euro19 {top:10%; left:20%;}
+	.euro20 {top:3%; left:32%;}
+	.euronesmysly div {
+		position:absolute;
+		width:34px;
+		height:34px;
+	}
+	.euronesmysly div a {
+		float:left;
+		position:relative;
+		border-radius:50%;
+		background:#00654e;
+		width:35px;
+		height:35px;
+		color:#00654e;
+		overflow:hidden;
+		text-align:center;
+		-webkit-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+	}
+	.euronesmysly div a i {
+		float:left;
+		width:100%;
+		text-align:center;
+		color:#fff;
+		font-size:18px;
+		line-height:38px;
+		font-family:'adelle_rgbold';
+		font-style:normal;
+	}
+}
+
+
 /* smartphone ---------------------------------------------------------------------- */
 
-@media(max-width: 480px) {
+@media(max-width: 480px), (max-height: 490px) {
 	
 	html, body {
 		height:auto;
@@ -394,8 +529,10 @@ h2 a {
 		position:relative;
 		bottom:auto;
 		right:auto;
-		margin:420px 0 0 10px;
+		margin:420px 0 0 0;
 		float:left;
+		width: 100%;
+		text-align: center;
 	}
 
 	.euroBox h2 {
@@ -444,4 +581,5 @@ h2 a {
 		line-height:13px;
 		font-size:11px;
 	}
+
 }
